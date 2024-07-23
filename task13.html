@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+          
+            justify-content: center;
+            display:inline-flex;
+            align-items: center;
+            background-color: pink;
+            width: 500px;
+            height:400px
+           
+        }
+        .i{
+            background-color: black;
+            color: white;
+            height: 20px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            padding: 4PX;
+            font-weight: bold;
+        }
+        .b button{
+            background-color: pink;
+           
+        }
+        .red-highlight {
+      background-color: red !important; 
+    }
+    .red-highlight button{
+        background-color: red !important; 
+    }
+    </style>
+    <script>
+        function change(){
+           var myDiv = document.getElementById('bo');
+
+
+myDiv.classList.toggle('red-highlight')
+
+}
+
+    </script>
+</head>
+<body>
+    <div class="b" id="bo">
+<div class="i" id="ba">BACKGROUND:PINK</div>
+<button onclick="change()">CLICK ME</button>
+    </div>
+</body>
+</html>
